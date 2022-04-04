@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.Logo{
+    width: 300px;
+    height: 80px;
+    float: left;
+    cursor: pointer;
+    background-color: rgb(56, 56, 56);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgb(56, 56, 56);
+}
+header li, a, button{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bolder;
+    font-size:16px;
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+    list-style-type: none;
+}
+.modalpro{
+    position: absolute;
+    right: 5%;
+    max-width: 20%;
+    min-height: 20%;
+    z-index: 50;
+    top: 70%;
+    opacity:0;
+    visibility: hidden;
+    transition: 300ms all;
+    color: white;
+}
+.modalpro.show{
+    opacity:1;
+    visibility:visible;
+    transition:300ms all;
+}
+.modalimg{
+    border: 1px solid white;
+    background-color: rgb(56, 56, 56);
+}
+.modalimg p,b,i{
+    background-color: transparent;
+}
+.modalimg img{
+    max-width: 20%;  
+}
+
+.TotalP{
+    background-color:rgb(56, 56, 56);
+}
+.TotalP span,i{
+    background-color:transparent;
+}
+#try{
+    color: #FF7F00;
+}
+.TotalHolder{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid white;
+    background-color: rgb(56, 56, 56);
+}
+.nav_links{
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+}
+.nav_links li{
+    background-color:rgb(56, 56, 56) ;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color:#FF7F00;
+    font-weight: bolder;
+}
+
+.btnNav{
+    padding: 6px 20px;
+    background-color:#ea6628;
+    color: #FEFEFE;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.btnNav:hover{
+    color: #ea6628;
+    background-color:#FEFEFE;
+    font-weight: bolder;
+}
+#crease{
+    padding: 1px 5px;
+    margin-left: 5px;
+    background-color:#ea6628;
+    color: #FEFEFE;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.inputregister{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.UserLoggedIn{
+    border: 1px #888;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    transform: 1s ease;
+}

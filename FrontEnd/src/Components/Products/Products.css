@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+.container{
+  box-sizing: border-box;
+  max-width: 85%;
+}
+.container h2{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 2%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 200px;
+  width: auto;
+  color: white;
+}
+.product_holder{
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 1;
+}
+.urun{
+  padding:3%;
+}
+.urun img{
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
+  display: block;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.urun > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.middle{
+  font-family: 'Roboto', sans-serif;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.urun:hover .middle {
+  opacity: 1;
+}
+.btnProduct{
+  border: none;
+  padding: 3px 20px;
+  color:white;
+  background-color: #ff7f00;
+  margin-right: 0px;
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.btnAdd{
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  padding: 6px 20px;
+  margin-right: 0px;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color:#ff7f00;
+  background-color: #FEFEFE;
+}
+#Up{
+  position: fixed; 
+  cursor: pointer;
+  border-radius: 10px; 
+  padding:7px;
+  bottom: 3%;
+  right: 5%;
+  z-index: 1;
+  background-color: #ff7f00 ;
+  color: white;
+}
+#Up:hover{
+  transition: 0.3s ease;
+  background-color:White;
+  color: #ff7f00;
+  
+}
+.modal{
+  height: 1500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-body{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.modal-body ul{
+  list-style-type:none;
+  text-align: left;
+}
+.modal-body h5{
+  font-weight: bold;
+  text-align: center;
+}
+.modal-header{
+  max-width: 100%;
+  height: 50px;
+}
+.modal-footer {
+  width: 100%;
+}
+
+
+.pprice span{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  float: left;
+}
+.pprice i{
+  background-color: transparent;
+}
+.pname span{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: black;
+}

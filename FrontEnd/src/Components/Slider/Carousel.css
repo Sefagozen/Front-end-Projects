@@ -1,0 +1,21 @@
+.rec-carousel-item:hover {
+    transition: transform 1s;
+    transform: scale(110%);
+}
+button.rec-dot{
+ background-color:white;
+ box-shadow: 0 0 1px 3px white;
+}
+button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+    box-shadow: 0 0 3px 3px #FF7F00;
+  }
+.rec.rec-arrow {
+    background-color: rgba(255, 255, 255, 0.6)
+}
+.rec.rec-arrow:hover {
+  background-color: #9b9b9b;
+}
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+  
